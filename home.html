@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <p><span>K</span>artiK</p>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>HELLO, MY NAME IS </p>
+                <h1>KARTIK <span>KHANDAL</span></h1>
+                <p>Full Stack Developer</p>
+            </div>
+            <br><br>
+            <a href="images/cv.pdf" download="cv" class="btn btn2">Download CV</a>
+        </div>
+    </div>
+
+    <!----------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    <h2> Hi my name is Kartik Khandal,</h2>
+                    I am a Full Stack Developer and civil engineering graduate from Yeshwantrao Chavan College of
+                    Engineering Nagpur.
+                    Currently, I work at Leadwinner Corp in Hyderabad, where I specialize in developing robust and
+                    innovative web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick=" opentab('education')">Education</p>
+                        <p class="tab-links" onclick=" opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Leadwinner Corp, Hyderabad, Telangana</span><br>
+                            <li> <span>Full Stack Developer, Jan-2023</span></li> <br>
+                            Developed vendor fund management system using Angular (frontend) and Spring Boot
+                            (backend). <br>
+                            Collaborated with cross-functional team to gather requirements and plan development
+                            process. <br>
+                            Implemented responsive UI/UX designs for seamless user experience. <br>
+                            Designed and developed RESTful APIs for efficient data exchange. <br>
+                            Integrated third-party payment gateways for secure financial transactions. <br>
+                            Conducted testing, debugging, and performance optimization. <br>
+                            Participated in code reviews and provided feedback to enhance code quality.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E in Civil Engineering (2022)</span><br>Yeshwantrao Chavan College Of
+                                Engineering , Nagpur <br>CGPA : 7.20
+                            </li>
+                            <li><span>Class XII in HSC (2018)</span><br>Bhalerao High School And Jr. College Of Science,
+                                Saoner <br>Per : 60.15%</li>
+                            <li><span>Class X in SSC(2016)</span><br>Bhalerao High School <br>Per : 67.00%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C Language, Java</li>
+                            <li><span>Technologies</span><br>Servlets , JSP , JDBC</li>
+                            <li><span>UI Technologies</span><br>HTML, CSS, Javascript, Angular</li>
+                            <li><span>Framework</span><br>Hibernate, Spring, Springboot</li>
+                            <li><span>Database</span> <br> Postgres</li>
+                            <li><span>Tools</span><br>Git, GitHub, Postman </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Bank Application</span><br>This Bank Application System lets users create a new
+                                account,
+                                make cash deposits and withdrawals, access account information
+                                and delete account all through software without the need of going
+                                personally to a bank. This Bank Application System project has
+                                been designed in Java and various actions have different panels.
+                            </li>
+                            <li><span>Flipkart (Frontend)</span><br>Ecommerce website clone using HTML and CSS</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Fronted Development</h2>
+                    <p>I have Fronted skills HTML5, CSS3, JavaScript, BootStrap and Angular to build Fronted web page</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Backend Development</h2>
+                    <p>I have Backend skills Hibernate, Spring, Springboot and Postgres database to build Backend of web application </p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!----------------Portfolio-------------------->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub=title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social app</h3>
+                        <p>cjhbjhxhjcnbhjcb</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social app</h3>
+                        <p>cjhbjhxhjcnbhjcb</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social app</h3>
+                        <p>cjhbjhxhjcnbhjcb</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-----------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p>kartikkhandal74@gmail.com</p>
+                    <p>+91-8788653179</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/kartik-khandal/"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-hackerrank"></i></a> -->
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kartik.</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKZwW_Evz1w5P-HzJ_xPo20Uvq6wAISAjYjVrbD62mh3YajPGix7f4GhTq3fxPjWtPmA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
