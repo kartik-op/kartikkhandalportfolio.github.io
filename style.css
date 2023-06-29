@@ -94,7 +94,6 @@ nav ul li a:hover::after {
     color: #ababab;
 }
 .row{
-    margin-top: 10%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -307,6 +306,9 @@ nav .fas{
 display:block ;
 font-size: 25px;
 
+}
+.row{
+ margin-top: 10%;
 }
 nav ul{
     background:#ff004f ;
